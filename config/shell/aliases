@@ -3,7 +3,7 @@ alias ls='eza -lh --group-directories-first --icons=auto'
 alias lsa='ls -a'
 
 # Fuzzy find (https://junegunn.github.io/fzf/)
-alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
+alias ff='fzf'
 alias eff='$EDITOR "$(ff)"'
 
 # Smart cd (https://github.com/ajeetdsouza/zoxide)
@@ -24,16 +24,10 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 # Tools
-alias c='opencode'
-alias cx='printf "\033[2J\033[3J\033[H" && claude --allow-dangerously-skip-permissions'
 alias d='docker'
 alias lzd='lazydocker'
-alias r='rails'
 alias v='vim'
 alias t='tmux attach || tmux new -s Work'
-alias ic='tdl c'
-alias ix='tdl cx'
-alias icx='tdl c cx'
 n() { if [[ $# -eq 0 ]]; then nvim .; else nvim "$@"; fi; }
 
 # Git
